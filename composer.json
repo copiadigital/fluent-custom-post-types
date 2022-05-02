@@ -1,0 +1,26 @@
+{
+  "name": "copiadigital/fluent-custom-post-types",
+  "type": "wordpress-plugin",
+  "description": "Developer-friendly fluent interface for registering WordPress custom post types",
+  "homepage": "https://github.com/copiadigital/fluent-custom-post-types",
+  "authors": [
+    {
+      "name": "Chris Willmott",
+      "email": "chris.willmott@copiadigital.com",
+      "homepage": "https://github.com/teaforchris"
+    },
+    {
+      "name": "Copia Digital Dev Team",
+      "email": "info@copiadigital.com",
+      "homepage": "https://github.com/copiadigital"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
