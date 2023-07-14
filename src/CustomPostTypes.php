@@ -8,12 +8,18 @@ use Copia\CustomWordpressObject\Taxonomy;
 final class CustomPostTypes
 {
 
-    public static function register(array $types)
+    public static function register(array $types, $init = true)
     {
-        foreach ( $types as $type ) {
-            add_action('init', function() use ($type) {
+        if($init === true) {
+            foreach ( $types as $type ) {
+                add_action('init', function() use ($type) {
+                    $type->register();
+                });
+            }
+        }else {
+            foreach ( $types as $type ) {
                 $type->register();
-            });
+            }
         }
     }
 
