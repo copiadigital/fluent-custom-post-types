@@ -27,6 +27,7 @@ final class PostType extends CustomWordpressObject
             'name'                     => $this->plural,
             'singular_name'            => $this->singular,
             'add_new_item'             => "Add New $this->singular",
+            'add_new'                  => "Add New $this->singular",
             'edit_item'                => "Edit $this->singular",
             'new_item'                 => "New $this->singular",
             'view_item'                => "View $this->singular",
