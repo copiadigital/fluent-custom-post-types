@@ -113,7 +113,7 @@ abstract class CustomWordpressObject
         return $this;
     }
 
-    public function setRewrite(array $args): CustomWordpressObject
+    public function setRewrite(bool|array $args): CustomWordpressObject
     {
         $this->args['rewrite'] = $args;
         return $this;
